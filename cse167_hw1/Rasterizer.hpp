@@ -1,13 +1,17 @@
-//
-//  Rasterizer.hpp
-//  cse167_hw1
-//
-//  Created by Simon on 4/6/16.
-//  Copyright © 2016 Simon. All rights reserved.
-//
+#include <math.h>
+#include "OBJObject.h"
+#include "Window.h"
 
-#ifndef Rasterizer_h
-#define Rasterizer_h
+using namespace std;
 
-
-#endif /* Rasterizer_h */
+class Rastersizer
+{
+public:
+    static void clearBuffer();
+    static void drawPoint(int x, int y, float r, float g, float b);
+    static void rasterize();
+    static void resizeCallback(GLFWwindow* window, int width, int height);
+    static void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods);
+    static void displayCallback(GLFWwindow* window);
+    static void errorCallback(int error, const char* description);
+};

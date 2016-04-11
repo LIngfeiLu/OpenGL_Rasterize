@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		149615901CADEF4100857664 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1496158F1CADEF4100857664 /* main.cpp */; };
+		1496159E1CADF00A00857664 /* Cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 149615961CADF00A00857664 /* Cube.cpp */; };
+		1496159F1CADF00A00857664 /* OBJObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 149615991CADF00A00857664 /* OBJObject.cpp */; };
+		149615A11CADF00A00857664 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1496159C1CADF00A00857664 /* Window.cpp */; };
+		14B4AC6E1CB59908007C9FD0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14B4AC6C1CB59908007C9FD0 /* main.cpp */; };
+		14BFD0A21CADFF510054A99F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14BFD0A11CADFF510054A99F /* OpenGL.framework */; };
+		14BFD0A51CAE00190054A99F /* libglfw.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 14BFD0A31CADFFC10054A99F /* libglfw.3.1.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +29,16 @@
 
 /* Begin PBXFileReference section */
 		1496158C1CADEF4100857664 /* cse167_hw1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cse167_hw1; sourceTree = BUILT_PRODUCTS_DIR; };
-		1496158F1CADEF4100857664 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		149615961CADF00A00857664 /* Cube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cube.cpp; sourceTree = "<group>"; };
+		149615971CADF00A00857664 /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cube.h; sourceTree = "<group>"; };
+		149615991CADF00A00857664 /* OBJObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OBJObject.cpp; sourceTree = "<group>"; };
+		1496159A1CADF00A00857664 /* OBJObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBJObject.h; sourceTree = "<group>"; };
+		1496159C1CADF00A00857664 /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
+		1496159D1CADF00A00857664 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		14B4AC6C1CB59908007C9FD0 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		14B4AC6D1CB59908007C9FD0 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		14BFD0A11CADFF510054A99F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		14BFD0A31CADFFC10054A99F /* libglfw.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.1.dylib; path = "../../../../../../../Developer/glfw-3.1.2/src/libglfw.3.1.dylib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14BFD0A51CAE00190054A99F /* libglfw.3.1.dylib in Frameworks */,
+				14BFD0A21CADFF510054A99F /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +57,8 @@
 		149615831CADEF4100857664 = {
 			isa = PBXGroup;
 			children = (
+				14BFD0A31CADFFC10054A99F /* libglfw.3.1.dylib */,
+				14BFD0A11CADFF510054A99F /* OpenGL.framework */,
 				1496158E1CADEF4100857664 /* cse167_hw1 */,
 				1496158D1CADEF4100857664 /* Products */,
 			);
@@ -57,7 +75,14 @@
 		1496158E1CADEF4100857664 /* cse167_hw1 */ = {
 			isa = PBXGroup;
 			children = (
-				1496158F1CADEF4100857664 /* main.cpp */,
+				14B4AC6C1CB59908007C9FD0 /* main.cpp */,
+				14B4AC6D1CB59908007C9FD0 /* main.h */,
+				149615961CADF00A00857664 /* Cube.cpp */,
+				149615971CADF00A00857664 /* Cube.h */,
+				149615991CADF00A00857664 /* OBJObject.cpp */,
+				1496159A1CADF00A00857664 /* OBJObject.h */,
+				1496159C1CADF00A00857664 /* Window.cpp */,
+				1496159D1CADF00A00857664 /* Window.h */,
 			);
 			path = cse167_hw1;
 			sourceTree = "<group>";
@@ -88,6 +113,9 @@
 		149615841CADEF4100857664 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Simon;
 				TargetAttributes = {
@@ -118,7 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				149615901CADEF4100857664 /* main.cpp in Sources */,
+				1496159F1CADF00A00857664 /* OBJObject.cpp in Sources */,
+				149615A11CADF00A00857664 /* Window.cpp in Sources */,
+				14B4AC6E1CB59908007C9FD0 /* main.cpp in Sources */,
+				1496159E1CADF00A00857664 /* Cube.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +240,17 @@
 		149615941CADEF4100857664 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.cpp/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Developer/glew-1.13.0/include",
+					"/Developer/glfw-3.1.2/include",
+					/Developer/glm,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"/Developer/glfw-3.1.2/src",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -216,6 +258,17 @@
 		149615951CADEF4100857664 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.cpp/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Developer/glew-1.13.0/include",
+					"/Developer/glfw-3.1.2/include",
+					/Developer/glm,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"/Developer/glfw-3.1.2/src",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -239,6 +292,7 @@
 				149615951CADEF4100857664 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

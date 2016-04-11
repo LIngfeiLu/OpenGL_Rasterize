@@ -1,5 +1,6 @@
 #include "main.h"
 
+
 GLFWwindow* window;
 
 void error_callback(int error, const char* description)
@@ -81,10 +82,10 @@ void print_versions()
 #endif
 }
 
-/*int main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	// Create the GLFW window
-	window = Window::create_window(1024, 1024);
+	window = Window::create_window(640,480);
 	// Print OpenGL and GLSL versions
 	print_versions();
 	// Setup callbacks
@@ -98,9 +99,20 @@ void print_versions()
 	while (!glfwWindowShouldClose(window))
 	{
 		// Main render display callback. Rendering of objects is done here.
-		Window::display_callback(window);
+        if(Window::getState() == -1)
+        {
+            Window::resize_callback(window, Window::width, Window::height);
+            Window::display_callback(window);
+            Window::idle_callback();
+        }
+        else if(Window::getState() == 1)
+        {
+            Window::resizeCallback(window, Window::width, Window::height);
+            Window::displayCallback(window);
+            Window::idle_callback();
+        }
 		// Idle callback. Updating objects, etc. can be done here.
-		Window::idle_callback();
+		
 	}
 
 	Window::clean_up();
@@ -110,4 +122,4 @@ void print_versions()
 	glfwTerminate();
 
 	exit(EXIT_SUCCESS);
-}*/
+}
